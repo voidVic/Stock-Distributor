@@ -1,75 +1,96 @@
 <html>
-    <head>
-        <title>Stock Distributor</title>
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
-    <body class="body">
-        <header>
-            Stock Distributor
-        </header>
-        <div class="container">
-            <div class="inp-row">
-                <div class="label">Stock and Unit</div>
-                <div class="inp">
-                    <input
-                        type="text"
-                        id="stockNameInp"
-                        placeholder="Stock Name"
-                    />
-                </div>
-                <div class="inp">
-                    <input
-                        type="number"
-                        id="stockUnitInp"
-                        placeholder="Stock Unit"
-                    />
-                </div>
-                <div class="inp btn add">
-                    <button id="addStock">Add +</button>
-                </div>
-            </div>
+  <head>
+    <title>Stock Distributor</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="body">
+    <header>
+      <div class="header-label">Stock Distributor</div>
 
-            <!-- User IP -->
+      <div
+      class="header-author">
+        <a
+          href="https://voidvic.herokuapp.com/"
+          target="_blank"
+        >
+          Developed by
+          <span class="author-name">Ankit Sharma</span>
+          click to know more about him.
 
-            <div class="inp-row">
-                <div class="label">User and Weight</div>
-                <div class="inp">
-                    <input
-                        type="text"
-                        id="UserNameInp"
-                        placeholder="User Name"
-                    />
-                </div>
-                <div class="inp">
-                    <input
-                        type="number"
-                        id="UserWeightInp"
-                        placeholder="User Weight"
-                    />
-                </div>
-                <div class="inp btn add">
-                    <button id="addUser">Add +</button>
-                </div>
-            </div>
-
-
-            <!-- Review -->
-
-            <code class="inp-row" id="reviewStocks"></code>
-            <code class="inp-row" id="reviewUsers"></code>
-
-
-            <!-- Generate Distribution -->
-
-            <div class="inp-row distribute-btn">
-                <button class="btn" id="distributeBtn">Distribute Stocks</button>
-            </div>
-
-
-            <div class="inp-row" id="reviewDistribution"></div>
-
+        </a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="inp-row">
+        <div class="label">Stock and Unit</div>
+        <div class="inp">
+          <input type="text" id="stockNameInp" placeholder="Stock Name" />
         </div>
+        <div class="inp">
+          <input type="number" id="stockUnitInp" placeholder="Stock Unit" />
+        </div>
+        <div class="inp btn add">
+          <button id="addStock">Add +</button>
+        </div>
+      </div>
 
-        <script src="./stock-distribution.js"></script>
-    </body>
+      <!-- User IP -->
+
+      <div class="inp-row">
+        <div class="label">User and Weight</div>
+        <div class="inp">
+          <input type="text" id="UserNameInp" placeholder="User Name" />
+        </div>
+        <div class="inp">
+          <input type="number" id="UserWeightInp" placeholder="User Weight" />
+        </div>
+        <div class="inp btn add">
+          <button id="addUser">Add +</button>
+        </div>
+      </div>
+
+      <!-- Review -->
+
+      <code class="inp-row" id="reviewStocks"></code>
+      <code class="inp-row" id="reviewUsers"></code>
+
+      <!-- Generate Distribution -->
+
+      <div class="inp-row distribute-btn">
+        <button class="btn" id="distributeBtn">Distribute Stocks</button>
+      </div>
+
+      <div class="inp-row" id="reviewDistribution"></div>
+    </div>
+
+    <div class="icon-bar">
+      <a
+        href="https://voidvic.herokuapp.com/"
+        target="_blank"
+        class="fa-website"
+        ><i class="fa fa-globe"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/voidvic/"
+        target="_blank"
+        class="instagram"
+        ><i class="fa fa-instagram"></i
+      ></a>
+      <a href="https://github.com/voidVic/" target="_blank" class="github"
+        ><i class="fa fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/voidvic/"
+        target="_blank"
+        class="linkedin"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+    </div>
+
+    <script src="./stock-distribution.js"></script>
+  </body>
 </html>
