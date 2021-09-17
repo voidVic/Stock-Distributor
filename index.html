@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Stock Distributor</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body class="body">
+        <header>
+            Stock Distributor
+        </header>
+        <div class="container">
+            <div class="inp-row">
+                <div class="label">Stock and Unit</div>
+                <div class="inp">
+                    <input
+                        type="text"
+                        id="stockNameInp"
+                        placeholder="Stock Name"
+                    />
+                </div>
+                <div class="inp">
+                    <input
+                        type="number"
+                        id="stockUnitInp"
+                        placeholder="Stock Unit"
+                    />
+                </div>
+                <div class="inp btn add">
+                    <button id="addStock">Add +</button>
+                </div>
+            </div>
+
+            <!-- User IP -->
+
+            <div class="inp-row">
+                <div class="label">User and Weight</div>
+                <div class="inp">
+                    <input
+                        type="text"
+                        id="UserNameInp"
+                        placeholder="User Name"
+                    />
+                </div>
+                <div class="inp">
+                    <input
+                        type="number"
+                        id="UserWeightInp"
+                        placeholder="User Weight"
+                    />
+                </div>
+                <div class="inp btn add">
+                    <button id="addUser">Add +</button>
+                </div>
+            </div>
+
+
+            <!-- Review -->
+
+            <code class="inp-row" id="reviewStocks"></code>
+            <code class="inp-row" id="reviewUsers"></code>
+
+
+            <!-- Generate Distribution -->
+
+            <div class="inp-row distribute-btn">
+                <button class="btn" id="distributeBtn">Distribute Stocks</button>
+            </div>
+
+
+            <div class="inp-row" id="reviewDistribution"></div>
+
+        </div>
+
+        <script src="./stock-distribution.js"></script>
+    </body>
+</html>
